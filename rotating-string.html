@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,21 +12,35 @@
         }
     </style>
 </head>
-<body>
-    <div id="rotatingString">w3resource</div>
+
+<body onload="animate_string('target')">
+
+    <pre id="target"> w3resource </pre>
 
     <script>
-        function rotateStringRight(str) {
-            return str.charAt(str.length - 1) + str.substring(0, str.length - 1);
+        // Define a function that animates the characters of a string
+        function animate_string(id) {
+            // Get the HTML element by its id
+            var element = document.getElementById(id);
+
+            // Access the text node inside the element (assuming no other children)
+            var textNode = element.childNodes[0];
+
+            // Extract the initial text content of the text node
+            var text = textNode.data;
+
+            // Set up an interval to rotate the characters in the text every 100 milliseconds
+            setInterval(function () {
+                // Move the last character to the beginning of the string
+                text = text[text.length - 1] + text.substring(0, text.length - 1);
+
+                // Update the text content of the text node with the modified string
+                textNode.data = text;
+            }, 500); // Rotate every 500 milliseconds
         }
 
-        let string = 'w3resource';
-        const element = document.getElementById('rotatingString');
-
-        setInterval(() => {
-            string = rotateStringRight(string);
-            element.textContent = string;
-        }, 500); // Rotate every 500 milliseconds
     </script>
+
 </body>
+
 </html>
