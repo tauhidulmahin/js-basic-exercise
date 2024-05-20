@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Rotation</title>
+    <style>
+        #rotatingString {
+            font-size: 24px;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="rotatingString">w3resource</div>
+
+    <script>
+        function rotateStringRight(str) {
+            return str.charAt(str.length - 1) + str.substring(0, str.length - 1);
+        }
+
+        let string = 'w3resource';
+        const element = document.getElementById('rotatingString');
+
+        setInterval(() => {
+            string = rotateStringRight(string);
+            element.textContent = string;
+        }, 500); // Rotate every 500 milliseconds
+    </script>
+</body>
+</html>
