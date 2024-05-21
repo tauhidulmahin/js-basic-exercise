@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate multiplication and division</title>
+    <style>
+        div,
+        p {
+            margin: 20px;
+        }
+
+        button {
+            margin: 10px 20px;
+            padding: 5px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <div>
+            <label for="f-number">1st Number : </label>
+            <input type="number" name="f-number" id="f-number" value="">
+        </div>
+        <div>
+            <label for="s-number">2nd Number : </label>
+            <input type="number" name="s-number" id="s-number" value="">
+        </div>
+        <div>
+            <button type="button" onclick="addBy()">Add</button>
+            <button type="button" onclick="subtractBy()">Subtract</button>
+        </div>
+        <div>
+            <button type="button" onclick="multiplyBy()">Multiply</button>
+            <button type="button" onclick="divideBy()">Divide</button>
+        </div>
+        <p id="showResult"></p>
+    </form>
+
+    <script>
+
+        let sum = null;
+        function addBy() {
+            let num1 = parseFloat(document.getElementById("f-number").value);
+            let num2 = parseFloat(document.getElementById("s-number").value);
+            sum = num1 + num2;
+            document.getElementById("showResult").innerHTML = ("The Result is = " + sum);
+        }
+
+        function subtractBy() {
+            let num1 = document.getElementById("f-number").value;
+            let num2 = document.getElementById("s-number").value;
+            sum = num1 - num2;
+            document.getElementById("showResult").innerHTML = ("The Result is = " + sum);
+        }
+        function multiplyBy() {
+            let num1 = document.getElementById("f-number").value;
+            let num2 = document.getElementById("s-number").value;
+            sum = num1 * num2;
+            document.getElementById("showResult").innerHTML = ("The Result is = " + sum);
+        }
+
+        function divideBy() {
+            let num1 = document.getElementById("f-number").value;
+            let num2 = document.getElementById("s-number").value;
+            sum = num1 / num2;
+            document.getElementById("showResult").innerHTML = ("The Result is = " + sum);
+        }
+
+    </script>
+</body>
+
+</html>
