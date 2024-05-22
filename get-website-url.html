@@ -12,7 +12,13 @@
 
     <script>
         function getUrl() {
-           document.getElementById("url").innerHTML = "<p>The URL of this page is : </p>" + window.location.href;
+
+        //get website url from BOM
+        
+        //document.getElementById("url").innerHTML = "<p>The URL of this page is : </p>" + window.location.href; 
+        
+        //get website url from DOM
+        document.getElementById("url").innerHTML = "<p>The URL of this page is : </p>" + document.URL;
         }
     </script>
 </body>
