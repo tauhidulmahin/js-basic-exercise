@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert Temperatures</title>
+</head>
+
+<body>
+
+    <input type="number" name="number" id="number">
+    <button type="button" onclick="getCelsius()">Convert Fahrenheit to Celsius</button>
+    <button type="button" onclick="getFahrenheit()">Convert Celsius to Fahrenheit</button>
+    <p id="cel"></p>
+    <p id="fahr"></p>
+    <script>
+        function getCelsius() {
+            let fahr = parseFloat(document.getElementById("number").value);
+            let fahrToCel = (fahr - 32) * 5/9;
+            document.getElementById("cel").innerHTML = fahr + "\xB0F is " + fahrToCel + "\xB0C";  
+        }
+        function getFahrenheit() {
+            let cel = parseFloat(document.getElementById("number").value);
+            let celToFahr = (cel * 9 / 5) + 32;
+            document.getElementById("fahr").innerHTML = cel + "\xB0C is " + celToFahr + "\xB0F";
+        }
+
+    </script>
+</body>
+
+</html>
