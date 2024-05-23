@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Difference between two numbers</title>
+</head>
+<body>
+    
+    <h2 id="num"></h2>
+
+    <script>
+        let num1 = prompt("Enter a Number : ");
+        let num2 = 13;
+        let result = null;
+        if (num2 < num1) {
+            result = (num1 - num2) * 2;
+            document.getElementById("num").innerHTML = "Difference is : " + result;
+        } else {
+            document.getElementById("num").innerHTML = "Given number is not broader than 13";
+        }
+    </script>
+</body>
+</html>
