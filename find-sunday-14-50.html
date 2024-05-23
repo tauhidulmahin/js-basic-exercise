@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Sunday</title>
+</head>
+<body>
+    
+    <p id="sunday"></p>
+    <script>
+        let result = "";
+        for (let year = 2014; year <= 2050; year++) {
+            let day = new Date(year, 0, 1);
+            if (day.getDay() === 0) {
+                document.getElementById('sunday').innerHTML += "1st January is being a Sunday " + year + "<br>";
+            }
+            
+        }
+    </script>
+</body>
+</html>
