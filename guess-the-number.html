@@ -11,9 +11,10 @@
     </div>
 
     <script>
-        let num = 7;
+        let num = Math.floor((Math.random() * 10) + 1);
+        console.log(num);
         let input = prompt("Enter a Number : ")
-        if (input == 7) {
+        if (input == num) {
             document.getElementById("show").innerHTML = "Good Work";
         } else {
             document.getElementById("show").innerHTML = "Not matched, Try again!!!!";
