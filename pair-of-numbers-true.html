@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pair of numbers</title>
+</head>
+<body>
+    
+    <h2 id="pair"></h2>
+    <script>
+        let num1 = parseFloat(prompt("Enter a Number :"));
+        let num2 = parseFloat(prompt("Enter a Number :"));
+        if (num1 === 50 || num2 === 50) {
+            document.getElementById("pair").innerHTML = "true";
+        } else if (num1 + num2 === 50) {
+            document.getElementById("pair").innerHTML = "true";
+        } else {
+            document.getElementById("pair").innerHTML = "false";
+        }
+    </script>
+</body>
+</html>
