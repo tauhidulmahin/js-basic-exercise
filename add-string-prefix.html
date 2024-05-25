@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add String prefix</title>
+</head>
+<body>
+    
+
+    <script>
+        function getString(str) {
+            if (str.startsWith("Py")) {    // The startsWith() method is case sensitive   
+                return str;
+            } else if (!str.startsWith("Py")) {
+                return "Py" + str; 
+            }
+        }
+        let string = getString("thon");
+        console.log(string);
+    </script>
+</body>
+</html>
