@@ -1,17 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Remove a character</title>
 </head>
+
 <body>
-    
+
 
     <script>
-        let str = "Bangladesh";
-        let newStr = str.replace("n", "");
+        function removeChar(str, position) {
+            partOne = str.substring(0, position);
+            partTwo = str.substring(position + 1, str.length);
+            return (partOne + partTwo);
+        }
+        let newStr = removeChar("Mahin", 2);
         console.log(newStr);
+
+
+        //if string has i, this code is not work properly
+
+        // let str = "Bangladesh";
+        // const position = parseInt(prompt("Which Position?"));
+        // const replaceChar = prompt("Write the replaceable character : ");
+        // for (var i = 0; i < str.length; i++) {
+        //     if (i == position) {
+        //         let newStr = str.replace(str[i], replaceChar);
+        //         console.log(newStr);
+        //     }
+        // }
     </script>
 </body>
+
 </html>
