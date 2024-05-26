@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First character add front and back</title>
+</head>
+<body>
+    
+
+    <script>
+        function firstChar(str) {
+            let first = str.charAt(0);
+            let mid = str.substring(0, (str.length));
+            return (first + mid + first);
+        }
+        let add = firstChar("Mahin");
+        console.log(add);
+    </script>
+</body>
+</html>
