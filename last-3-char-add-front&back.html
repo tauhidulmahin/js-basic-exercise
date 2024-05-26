@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>last 3 char add front & back</title>
+</head>
+<body>
+    
+
+    <script>
+        function last3Char(str) {
+            let last = str.substring(str.length-3, str.length);
+            let first = str.substring(0, str.length)
+            return (last + first + last);
+        }
+        let add = last3Char("Bangladesh");
+        console.log(add);
+    </script>
+</body>
+</html>
