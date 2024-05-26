@@ -1,17 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Days left before Christmas</title>
 </head>
+
 <body>
-    
+
 
     <script>
         let today = new Date();
-        let christmas = new Date(2024, 11, 25);
-        console.log(christmas);
+        let getYear = today.getFullYear();
+        let christmas = new Date(getYear, 11, 25);
+        let oneDay = 1000 * 60 * 60 * 24;
+        let dayLeft;
+        
+        if (today < christmas) {
+            dayLeft = Math.ceil((christmas - today) / oneDay);
+        } else {
+            let nextChristmas = new Date(getYear + 1, 11, 25);
+            dayLeft = Math.ceil((nextChristmas - today) / oneDay);
+        }
+
+        console.log(dayLeft);
+
     </script>
 </body>
+
 </html>
