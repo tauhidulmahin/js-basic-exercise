@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swap first last character</title>
+</head>
+
+<body>
+
+
+    <script>
+        function firstLastSwap(str) {
+            let first = str.charAt(str.length-1);
+            let mid = str.substring(1, (str.length-1));
+            let last = str.charAt (0);
+            return (first + mid + last);
+        }
+        let swap = firstLastSwap("Hello World");
+        console.log(swap);
+    </script>
+</body>
+
+</html>
