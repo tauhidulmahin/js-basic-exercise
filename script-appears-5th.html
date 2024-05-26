@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script appears 5th position</title>
+</head>
+<body>
+    
+
+    <script>
+        function positon(str) {
+            let x = str.indexOf("Script");
+            if (x === 4) {
+                return str.replace("Script", "");
+            } else {
+                return str;
+            }
+        }
+        let newStr = positon("JavaScript is best");
+        console.log(newStr);
+    </script>
+</body>
+</html>
