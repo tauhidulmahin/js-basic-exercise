@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>replace character in following alphabet</title>
+</head>
+
+<body>
+
+
+    <script>
+        function replaceChar(str) {
+            let result = "";
+            for (const char of str) {
+                let code = char.charCodeAt() + 1;
+                let newChar = String.fromCharCode(code);
+                result += newChar;
+            }
+            return result;
+        }
+
+        let newStr = replaceChar("mahin");
+        console.log(newStr);
+
+    </script>
+</body>
+
+</html>
