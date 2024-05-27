@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse string</title>
+</head>
+<body>
+    
+
+    <script>
+        function reverseStr(str) {
+            let array = str.split("");
+            let rev = array.reverse();
+            let revString = rev.join();
+            let rep = revString.replaceAll(",", "" )
+            return rep;
+        }
+
+        let newStr = reverseStr("Tauhidul");
+        console.log(newStr);
+    </script>
+</body>
+</html>
