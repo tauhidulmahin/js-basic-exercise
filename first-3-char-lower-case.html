@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First 3 character lower case</title>
+</head>
+
+<body>
+
+
+    <script>
+        function lowerChar(str) {
+
+            if (str.length < 3) {
+                let z = str.toUpperCase();
+                return z;
+            } else {
+                let first = str.substring(0, 3);
+                let lower = first.toLowerCase();
+                let last = lower + str.substring(3, str.length)
+                return last;
+            }
+        }
+
+        let newStr = lowerChar("MAHIN");
+        console.log(newStr);
+    </script>
+</body>
+
+</html>
