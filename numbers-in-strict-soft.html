@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbers in strict soft</title>
+</head>
+<body>
+    
+
+    <script>
+        let num1 = parseFloat(prompt("Enter a Number : "));
+        let num2 = parseFloat(prompt("Enter a Number : "));
+        let num3 = parseFloat(prompt("Enter a Number : "));
+
+        if ((num1 < num2) && (num2 < num3)) {
+            console.log("Strictly Increasing");
+        } else if (num3 > num2) {
+            console.log("Softly Increasing");
+        } else {
+            console.log("No increasing");
+        }
+    </script>
+</body>
+</html>
