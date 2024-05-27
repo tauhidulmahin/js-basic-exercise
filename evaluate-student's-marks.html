@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluate student's total marks</title>
+</head>
+
+<body>
+
+
+    <script>
+        function evaluateGrade(totalMarks, isFinalExam) {
+            if (isFinalExam) {
+                // For final exams, the student needs at least 90 marks to get an A+
+                return totalMarks >= 90;
+            } else {
+                // For non-final exams, the student needs marks between 89 and 100 to get an A+
+                return totalMarks >= 89 && totalMarks <= 100;
+            }
+        }
+
+        console.log(evaluateGrade(92)); // true (not final exam, and marks are within 89-100)
+        console.log(evaluateGrade(92, true)); // true (final exam, and marks are 90 or greater)
+        console.log(evaluateGrade(88, true)); // false (final exam, but marks are less than 90)
+        console.log(evaluateGrade(88)); // false (not final exam, and marks are less than 89)
+
+    </script>
+</body>
+
+</html>
