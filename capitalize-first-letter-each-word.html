@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitalize first letter of each word</title>
+</head>
+
+<body>
+
+
+    <script>
+        function capitalFirst(str) {
+            let words = str.split(" ");
+            for (let i = 0; i < words.length; i++) {
+                words[i] = words[i][0].toUpperCase() + words[i].substring(1);
+            }
+            let string = words.join(" ");
+            return string;
+
+        }
+        let newStr = capitalFirst("tauhidul islam mahin");
+        console.log(newStr);
+        
+    </script>
+</body>
+
+</html>
