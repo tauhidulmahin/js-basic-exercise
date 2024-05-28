@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert letters alphabetically</title>
+</head>
+<body>
+    
+
+    <script>
+        function alphabetically(str) {
+            let alpha = str.split("").sort().join("");
+            return alpha;
+        }
+        
+        let newStr = alphabetically("mahin");
+        console.log(newStr);
+    </script>
+</body>
+</html>
