@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String using the first and last n characters</title>
+</head>
+<body>
+    
+
+    <script>
+        function nChar(str, char) {
+            let first = str.substring(0, char);
+            let last = str.substring(str.length-char, str.length);
+            return (first + last);
+        }
+        let newStr = nChar("tauhidul", 2);
+        console.log(newStr);
+    </script>
+</body>
+</html>
