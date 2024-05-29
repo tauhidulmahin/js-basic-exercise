@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Largest value between the first and last elements of an array</title>
+</head>
+<body>
+    
+
+    <script>
+        let array = [10, 20, 30, 40];
+        let firstPosi = array[0];
+        let endPosi = array.length - 1;
+        let max = Math.max(firstPosi, array[endPosi]);
+        let newArray = [max, max, max, max];
+        console.log(newArray);
+    </script>
+</body>
+</html>
