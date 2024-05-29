@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concate strings trim if uneven</title>
+</head>
+<body>
+    
+
+    <script>
+        function concate(str1, str2) {
+            if (str1.length == str2.length) {
+                return str1.concat(str2);
+            } else {
+                let x = Math.min(str1.length, str2.length);
+                let y = str1.substring(0, x) + str2.substring(0, x);
+                return y;
+            }
+        }
+        let newStr = concate("python", "js");
+        console.log(newStr);
+    </script>
+</body>
+</html>
