@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Last three characters to the start</title>
+</head>
+
+<body>
+
+
+    <script>
+        function lastToFirst(str) {
+            if (str.length >= 3) {
+                let x = str.substring(str.length - 3, str.length);
+                let y = str.substring(0, str.length - 3);
+                return (x + y);
+            } else {
+                return str;
+            }
+        }
+        let newStr = lastToFirst("tauhidul");
+        console.log(newStr);
+    </script>
+</body>
+
+</html>
