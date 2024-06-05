@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divide an array of positive integers into two parts</title>
+</head>
+
+<body>
+
+
+    <script>
+        let array = [11, 21, 31, 14, 15, 16];
+        let result = [0, 0];
+        for (let i = 0; i < array.length; i++) {
+            if (i % 2 === 0) {
+                result[0] += array[i];
+            } else {
+                result[1] += array[i];
+            }
+        }
+        console.log(result);
+
+    </script>
+</body>
+
+</html>
