@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Longest string from a given array of strings</title>
 </head>
+
 <body>
-    
-    
+
+
     <script>
-        let array = ['nf', 'fndn', 'fnkdflk', 'nfsknfsnf', 'nfjkdnfwfw'];
-        let max;
+        let array = ['nf', 'fndn', 'nfjkdnfrwfw', 'nfsknfsnf', 'nfwfw'];
+        let max = "";
+
         for (let i = 0; i < array.length; i++) {
             const element = array[i];
-            let x = Math.max(element.length);
-            console.log(x);
+            if (element.length > max.length) {
+                max = element;
+            }
         }
+        console.log("The longest string is:", max);
     </script>
 </body>
+
 </html>
