@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of a given angle</title>
+</head>
+<body>
+    
+
+    <script>
+        function getAngle(angle) {
+            if (angle < 90) {
+                return "Acute angle";
+            }
+            if (angle === 90) {
+                return "Right angle";
+            }
+            if ((angle > 90) && (angle < 180)) {
+                return "Obtuse angle";
+            }
+            if (angle === 180) {
+                return "Straight angle";
+            }
+        }
+        let showAngle = getAngle(100);
+        console.log(showAngle);
+    </script>
+</body>
+</html>
